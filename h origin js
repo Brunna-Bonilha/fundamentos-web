@@ -1,0 +1,216 @@
+[1mdiff --git a/assents/css/style.css b/assents/css/style.css[m
+[1mindex 6ca2199..88090db 100644[m
+[1m--- a/assents/css/style.css[m
+[1m+++ b/assents/css/style.css[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-/* Estilos do index.html) */[m
+[32m+[m[32m/* Estilos da página index.html*/[m
+ [m
+ .center {[m
+     text-align: center;[m
+[36m@@ -11,113 +11,60 @@[m
+     align-items: center;[m
+ }[m
+ [m
+[31m-#menu li  {[m
+[31m-    display: inline;[m
+[31m-    padding: 15px;[m
+[31m-}[m
+[32m+[m[32m#menu li {[m
+[32m+[m[32m   display:inline;[m
+[32m+[m[32m   padding: 15px;[m
+[32m+[m[32m }[m
+ [m
+[31m-#menu li a{[m
+[32m+[m[32m#menu li a {[m
+     text-decoration: none;[m
+     color: black;[m
+[32m+[m[32m    font-size: 20px;[m
+ }[m
+ [m
+ #menu li a:hover {[m
+[31m-    color: grey;[m
+[31m-}[m
+[31m-[m
+[31m-.p-30{[m
+[31m-    padding:30px;[m
+[32m+[m[32m    color:blueviolet[m
+ }[m
+ [m
+[31m-.p-50{[m
+[31m-    padding:50px;[m
+[32m+[m[32m.p-30 {[m
+[32m+[m[32m    padding: 30px;[m
+ }[m
+ [m
+[31m-.br-50{[m
+[31m-    border-radius: 50px;[m
+[32m+[m[32m.br-50 {[m
+[32m+[m[32m    border-radius: 50%;[m
+ }[m
+ [m
+ .wh-300{[m
+[31m-    width: 300px;[m
+[31m-    height: 300px;[m
+[31m-}[m
+[31m-[m
+[31m-/* Footer */[m
+[31m-[m
+[31m-footer ul {[m
+[31m-    list-style: none;[m
+[31m-    padding: 0;[m
+[31m-    margin: 0; [m
+[31m-}[m
+[31m-[m
+[31m-footer ul li {[m
+[31m-    display: inline;[m
+[31m-    margin-right: 15px;[m
+[31m-}[m
+[31m-[m
+[31m-footer ul li a {[m
+[31m-    text-decoration: none;[m
+[31m-    color: #000;[m
+[31m-    font-size: 18px;[m
+[31m-}[m
+[31m-[m
+[31m-footer ul li a:hover {[m
+[31m-    color: #0077b5; [m
+[31m-}[m
+[31m-[m
+[31m-footer {[m
+[31m-    background-color: #f1f1f1;[m
+[31m-    padding: 20px;[m
+[31m-    text-align: center;[m
+[31m-}[m
+[31m-[m
+[31m-footer p {[m
+[31m-    margin: 10px 0 0;[m
+[31m-    color: #666;[m
+[32m+[m[32m    width: 400px;[m
+[32m+[m[32m    height: 400px;[m
+ }[m
+ [m
+[32m+[m[32m/* Estilos da página contato.html*/[m
+ [m
+[31m-/* Estilos específicos para contato.html */[m
+[31m-[m
+[31m-form {[m
+[31m-    display: flex;[m
+[31m-    flex-direction: column;[m
+[31m-    gap: 15px;[m
+[32m+[m[32m.mb-50 {[m
+[32m+[m[32m    margin-bottom: 50px;[m
+ }[m
+ [m
+[31m-form label {[m
+[31m-    font-weight: bold;[m
+[32m+[m[32m.ml-50 {[m
+[32m+[m[32m    margin-left: 50px;[m
+ }[m
+ [m
+[31m-form input, form textarea {[m
+[32m+[m[32minput[type="text"], input[type="email"], textarea {[m
+     width: 100%;[m
+     padding: 10px;[m
+[31m-    border: 1px solid #ccc;[m
+[31m-    border-radius: 5px;[m
+[32m+[m[32m    margin: 10px 0;[m
+[32m+[m[32m    box-sizing: border-box;[m
+[32m+[m[32m    color: black[m
+ }[m
+ [m
+[31m-form button {[m
+[31m-    width: 100%;[m
+[31m-    padding: 10px;[m
+[31m-    border: none;[m
+[31m-    border-radius: 5px;[m
+[31m-    background-color: #0077b5;[m
+[32m+[m[32mbutton {[m
+[32m+[m[32m    background-color: blueviolet;[m
+     color: white;[m
+[31m-    font-size: 16px;[m
+[32m+[m[32m    padding: 10px 20px;[m
+[32m+[m[32m    border: none;[m
+     cursor: pointer;[m
+ }[m
+ [m
+[31m-form button:hover {[m
+[31m-    background-color: #005a8a;[m
+[32m+[m[32mbutton:hover {[m
+[32m+[m[32m    background-color: indigo;[m
+ }[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-  [m
+\ No newline at end of file[m
+[1mdiff --git a/contato.html b/contato.html[m
+[1mindex 56c4e2c..a3a2e56 100644[m
+[1m--- a/contato.html[m
+[1m+++ b/contato.html[m
+[36m@@ -5,11 +5,6 @@[m
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+     <title>Contato</title>[m
+     <link rel="stylesheet" href="assents/css/style.css">[m
+[31m-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">[m
+[31m-[m
+[31m- [m
+[31m-  [m
+[31m-[m
+ </head>[m
+ <body>[m
+    [m
+[36m@@ -57,16 +52,5 @@[m
+ [m
+     <script src="assents/js/script.js"></script>[m
+ [m
+[31m-    <footer>[m
+[31m-[m
+[31m-        [m
+[31m-        <div class="container">[m
+[31m-          <a href="https://github.com/Brunna-Bonilha" target="_blank"><i class="fab fa-github"></i> GitHub</a>[m
+[31m-          <a href="https://www.linkedin.com/in/bbonilha/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>[m
+[31m-        </ul>[m
+[31m-       </div>[m
+[31m-        <p> Todos os direitos reservados - Brunna Bonilha.</p>[m
+[31m-    </footer>[m
+[31m-[m
+ </body>[m
+ </html>[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 4addaef..7cca078 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -3,14 +3,8 @@[m
+ <head>[m
+     <meta charset="UTF-8">[m
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[31m-    <meta name="description" content="Projeto Portfólio">[m
+[31m-    <meta name="autor" content="Brunna Bonilha">[m
+[31m-    <meta name="keywords" content="HTML, CSS, JavaScript">[m
+[31m-    <link rel="stylesheet" href="./assets/css/style.css">[m
+[31m-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">[m
+[31m-[m
+[31m-    <title>Portfólio</title>[m
+[31m-   [m
+[32m+[m[32m    <title>Meu Perfil</title>[m
+[32m+[m[32m   <link rel="stylesheet" href="assents/css/style.css">[m
+ [m
+ </head>[m
+ <body>[m
+[36m@@ -64,8 +58,6 @@[m [mframeborder="0"[m
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"[m
+  referrerpolicy="strict-origin-when-cross-origin"[m
+   allowfullscreen>[m
+[31m-[m
+[31m-  [m
+ </iframe>[m
+ </div>[m
+ </body>[m
